@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Auto</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/slick.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="all-title">Все марки</h2>
+    <div class="categories">
+      <ul class="categories__menu">
+        <div class="credit__select">
+          <select name="select2" id="select2">
+            <option value="5">Все</option>
+          </select>
+        </div>
+        <li class="categories__menu-item categories__menu-item_all">
+          <a class="categories__menu-link" href="#" >
+            <p class="categories__menu-name">Все</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/kia.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Kia</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/brilliance.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Brilliance</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/citroen.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Citroen</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link categories__menu-link-active" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/ford.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Ford</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/haima.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Haima</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/lifan.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Lifan</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/suzuki.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Suzuki</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/peugeout.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Peugeot</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/uaz.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">UAZ</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/hyundai.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Hyundai</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/changan.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Changan</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/datsun.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Datsun</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/foton.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Foton</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/opel.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Opel</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/toyota.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Toyota</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/chevrolet.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Chevrolet</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/faw.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">FAW</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/great wall.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Great Wall</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/lada.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Lada</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/ssangyong.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">SsangYong</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/haval.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Haval</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/mazda.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Mazda</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/ravon.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Ravon</p>
+          </a>
+        </li>
+        <li class="categories__menu-item">
+          <a class="categories__menu-link" href="#" >
+            <div class="categories__menu-logo_container">
+              <img class="categories__menu-logo" src="../img/car_logos/zotye.png" alt="logo">
+            </div>
+            <p class="categories__menu-name">Zotye</p>
+          </a>
+        </li>
+        <li class="categories__menu-item categories__menu-item_more">
+          <a class="categories__menu-link categories__menu-link-active" href="#" >
+            <p class="categories__menu-name">Показать еще</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <main class="main">
+      <div class="car">
+        <div class="car__photos">
+          <div class="car__guarantee">
+            5 лет гарантии
+          </div>
+          <div class="car__photos-big">
+            <img class="car__photos-big-photo" src="../img/big photo.png" alt="car photo">
+          </div>
+          <div class="car__photos-small">
+            <img class="car__photos-small-photo photo1" src="../img/small photo1.png" alt="car photo">
+            <img class="car__photos-small-photo photo2" src="../img/small photo2.png" alt="car photo">
+            <img class="car__photos-small-photo photo3" src="../img/small photo3.png" alt="car photo">
+            <img class="car__photos-small-photo photo4" src="../img/small photo4.png" alt="car photo">
+            <img class="car__photos-small-photo photo5" src="../img/small photo5.png" alt="car photo">
+            <img class="car__photos-small-photo photo6" src="../img/small photo6.png" alt="car photo">
+            <img class="car__photos-small-photo photo7" src="../img/small photo7.png" alt="car photo">
+          </div>
+        </div>
+        <div class="car__about">
+          <div class="car__info">
+            <h2 class="car__title">Ford Focus</h2>
+            <div class="car__sees">
+              <img src="../img/eye.png" alt="eye">
+              <p>Автомобиль сейчас смотрят 9 человек</p>
+            </div>
+            <div class="car__features">
+              <p>Привод: <span>Передний</span></p>
+              <p>КПП: <span>АКПП</span></p>
+              <p>Мощность: <span>35 л.с.</span></p>
+              <p>Кузов: <span>Внедорожник</span></p>
+              <p>Тип двигателя: <span>Бензин</span></p>
+              <p>Объем двигателя: <span>2 л.</span></p>
+            </div>
+          </div>
+          <div class="car__price">
+            <span>от 6961 ₽/мес</span>
+            <h3>860 000 руб.</h3>
+          </div>
+          <div class="car__buttons">
+            <button class="car__button car__button-buy">Заказать авто</button>
+            <button class="car__button car__button-credit">Купить в кредит</button>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        <div class="credit__background">
+          <div class="credit__inner">
+            <div class="credit__upper">
+              <div class="credit__select">
+                <label for="select1">Первоначальный взнос:</label>
+                <select name="select1" id="select1">
+                  <option value="10">10%</option>
+                  <option value="20">20%</option>
+                  <option value="30">30%</option>
+                </select>
+              </div>
+              <div class="credit__select">
+                <label for="select2">Срок кредита:</label>
+                <select name="select2" id="select2">
+                  <option value="5">5 лет</option>
+                  <option value="10">10 лет</option>
+                </select>
+              </div>
+              <button class="credit__button">Подать заявку на кредит</button>
+            </div>
+            <div class="credit__price">
+              <h6>Ежемесячный платеж: </h6>
+              <span>11 467 руб.</span>
+              <p>*Предварительный расчет</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="description__upper">
+          <h3 class="description__title">Описание</h3>
+          <p>Цвет: черный (металлик)</p>
+          <p>Предпродажная подготовка включает в себя:</p>
+          <ul class="description__list">
+            <li>- Юридическую экспертизу (На руки выдается заключение независимой криминалистической экспертизы о юридической чистоте автомобиля);</li>
+            <li>- Хим.чистку салона;</li>
+            <li>- Полировку кузова;</li>
+            <li>- Полировку кузова;</li>
+            <li>- Полную диагностику ходовой части и двигателя автомобиля.</li>
+          </ul>
+          <p>По дополнительным вопросам обращайтесь по телефону.</p>
+        </div>
+        <div class="description__bottom">
+          <h3 class="description__title">Программа автокредитования</h3>
+          <p>В центре ABC вы можете оформить данный автомобиль в кредит на выгодных условиях. Первоначальный взнос от 0%, процентные ставки от 8%, более 55 кредитных программ на выбор. Вы сможете выбрать подходящий срок кредита от 6 месяцев до 5 лет, при этом, в любой момент, использовать возможность досрочного погашения.</p>
+        </div>
+        <h3 class="description__title">Похожие спецпредложения</h3>
+      </div>
+      <div class="slider">
+        <div class="slider__item">
+          <span class="slider__guarantee">5 лет гарантии</span>
+          <div class="slider__info">
+            <img class="slider__photo" src="../img/sliderimage.png" alt="car">
+            <img class="slider__pattern1" src="../img/slider pattern.png" alt="pattern">
+            <img class="slider__pattern2" src="../img/slider pattern.png" alt="pattern">
+            <div class="slider__features">
+              <h3 class="slider__title">Ford Focus</h3>
+              <p>Привод: <span>Передний</span></p>
+              <p>КПП: <span>АКПП</span></p>
+              <p>Мощность: <span>35 л.с.</span></p>
+              <p>Кузов: <span>Внедорожник</span></p>
+              <p>Тип двигателя: <span>Бензин</span></p>
+              <p>Объем двигателя: <span>2 л.</span></p>
+            </div>
+            <img class="slider__left-arrow" src="../img/left arrow.png" alt="left">
+            <img class="slider__right-arrow" src="../img/right arrow.png" alt="right">
+          </div>
+          <h3 class="slider__title-mobile">Ford Focus</h3>
+          <div class="slider__price">
+            <h4>860 000 руб.</h4>
+            <span>от 6961 ₽/мес</span>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button car__button-buy">Купить авто</button>
+            <button class="slider__button credit__button">Купить в кредит</button>
+          </div>
+        </div>
+        <div class="slider__item">
+          <span class="slider__guarantee">5 лет гарантии</span>
+          <div class="slider__info">
+            <img class="slider__photo" src="../img/sliderimage.png" alt="car">
+            <img class="slider__pattern1" src="../img/slider pattern.png" alt="pattern">
+            <img class="slider__pattern2" src="../img/slider pattern.png" alt="pattern">
+            <div class="slider__features">
+              <h3 class="slider__title">Ford Focus</h3>
+              <p>Привод: <span>Передний</span></p>
+              <p>КПП: <span>АКПП</span></p>
+              <p>Мощность: <span>35 л.с.</span></p>
+              <p>Кузов: <span>Внедорожник</span></p>
+              <p>Тип двигателя: <span>Бензин</span></p>
+              <p>Объем двигателя: <span>2 л.</span></p>
+            </div>
+            <img class="slider__left-arrow" src="../img/left arrow.png" alt="left">
+            <img class="slider__right-arrow" src="../img/right arrow.png" alt="right">
+          </div>
+          <div class="slider__price">
+            <h4>860 000 руб.</h4>
+            <span>от 6961 ₽/мес</span>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button car__button-buy">Купить авто</button>
+            <button class="slider__button credit__button">Купить в кредит</button>
+          </div>
+        </div>
+        <div class="slider__item">
+          <span class="slider__guarantee">5 лет гарантии</span>
+          <div class="slider__info">
+            <img class="slider__photo" src="../img/sliderimage.png" alt="car">
+            <img class="slider__pattern1" src="../img/slider pattern.png" alt="pattern">
+            <img class="slider__pattern2" src="../img/slider pattern.png" alt="pattern">
+            <div class="slider__features">
+              <h3 class="slider__title">Ford Focus</h3>
+              <p>Привод: <span>Передний</span></p>
+              <p>КПП: <span>АКПП</span></p>
+              <p>Мощность: <span>35 л.с.</span></p>
+              <p>Кузов: <span>Внедорожник</span></p>
+              <p>Тип двигателя: <span>Бензин</span></p>
+              <p>Объем двигателя: <span>2 л.</span></p>
+            </div>
+            <img class="slider__left-arrow" src="../img/left arrow.png" alt="left">
+            <img class="slider__right-arrow" src="../img/right arrow.png" alt="right">
+          </div>
+          <div class="slider__price">
+            <h4>860 000 руб.</h4>
+            <span>от 6961 ₽/мес</span>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button car__button-buy">Купить авто</button>
+            <button class="slider__button credit__button">Купить в кредит</button>
+          </div>
+        </div>
+        <div class="slider__item">
+          <span class="slider__guarantee">5 лет гарантии</span>
+          <div class="slider__info">
+            <img class="slider__photo" src="../img/sliderimage.png" alt="car">
+            <img class="slider__pattern1" src="../img/slider pattern.png" alt="pattern">
+            <img class="slider__pattern2" src="../img/slider pattern.png" alt="pattern">
+            <div class="slider__features">
+              <h3 class="slider__title">Ford Focus</h3>
+              <p>Привод: <span>Передний</span></p>
+              <p>КПП: <span>АКПП</span></p>
+              <p>Мощность: <span>35 л.с.</span></p>
+              <p>Кузов: <span>Внедорожник</span></p>
+              <p>Тип двигателя: <span>Бензин</span></p>
+              <p>Объем двигателя: <span>2 л.</span></p>
+            </div>
+            <img class="slider__left-arrow" src="../img/left arrow.png" alt="left">
+            <img class="slider__right-arrow" src="../img/right arrow.png" alt="right">
+          </div>
+          <div class="slider__price">
+            <h4>860 000 руб.</h4>
+            <span>от 6961 ₽/мес</span>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button car__button-buy">Купить авто</button>
+            <button class="slider__button credit__button">Купить в кредит</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay closed"></div>
+    <div class="popup-credit closed">
+      <div class="popup-credit__title">
+        <p>Оформить кредит на</p>
+        <span>Ford Focus</span>
+      </div>
+      <button class="popup-credit__close">
+        <img src="../img/close.png" alt="close">
+      </button>
+      <div class="popup-credit__inner">
+        <div class="popup-credit__left">
+          <form class="popup-credit__form" action="#">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" pattern="[7-8]{1}[0-9]{10}" placeholder="Контактный телефон">
+            <input type="submit" value="Оставить заявку">
+          </form>
+          <div class="popup-credit__agreement">
+            <input class="checkbox" type="checkbox" name="check" id="checkbox">
+            <label class="label" for="checkbox"></label>
+            <p>Отправляя форму я даю согласие на обработку <a href="#">персональных данных</a></p>
+          </div>
+        </div>
+        <div class="popup-credit__right">
+          <img class="popup-credit__money" src="../img/money.png" alt="keys">
+          <img class="popup-credit__circle" src="../img/circle.png" alt="circle">
+          <ul class="popup-credit__list">
+            <li class="popup-credit__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p>Ставка 5,5 %</p>
+            </li>
+            <li class="popup-credit__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p>Кредитные каникулы 3 месяца</p>
+            </li>
+            <li class="popup-credit__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p class="decrease-line-height">Все расходы на страхование за нас счет</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popup-buy closed">
+      <div class="popup-buy__title">
+        <p>Купить</p>
+        <span>Ford Focus</span>
+      </div>
+      <button class="popup-buy__close">
+        <img src="../img/close.png" alt="close">
+      </button>
+      <div class="popup-buy__inner">
+        <div class="popup-buy__left">
+          <form class="popup-buy__form" action="#">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" pattern="[7-8]{1}[0-9]{10}" placeholder="Контактный телефон">
+            <input type="submit" value="Оставить заявку">
+          </form>
+          <div class="popup-buy__agreement">
+            <input class="checkbox" type="checkbox" name="check" id="checkbox">
+            <label class="label" for="checkbox"></label>
+            <p>Отправляя форму я даю согласие на обработку <a href="#">персональных данных</a></p>
+          </div>
+        </div>
+        <div class="popup-buy__right">
+          <img class="popup-buy__keys" src="../img/keys.png" alt="keys">
+          <img class="popup-buy__circle" src="../img/circle.png" alt="circle">
+          <ul class="popup-buy__list">
+            <li class="popup-buy__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p>Без первоначального взноса</p>
+            </li>
+            <li class="popup-buy__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p>Минимальная ставка от 5,5 %</p>
+            </li>
+            <li class="popup-buy__list-item">
+              <img src="../img/checkmark.png" alt="checkmark">
+              <p>Оформление сделки за 1 день</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
