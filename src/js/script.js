@@ -34,14 +34,17 @@ $(function() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
-        breakpoint: 425,
+        breakpoint: 980,
         settings : {
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true
+          dots: true,
+          arrows: false
         }
       }
     ]

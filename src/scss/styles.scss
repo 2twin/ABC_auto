@@ -1,5 +1,5 @@
 body {
-  min-width: 375px;
+  min-width: 325px;
   font-family: "century-gothic", sans-serif;
   letter-spacing: .05em;
 }
@@ -24,6 +24,7 @@ span {
   width: 302px;
   height: 100%;
   background: url('../img/Mask.png');
+  background-size: cover;
   padding: 19px 14px 1px 22px;
 
   &__menu-item {
@@ -93,11 +94,11 @@ span {
 }
 
 .car {
+  padding-top: 30px;
   font-family: "century-gothic", sans-serif;
   position: relative;
-  top: 32px;
   width: 100%;
-  height: 624px;
+  height: 650px;
   padding-left: 35px;
   display: flex;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
@@ -109,11 +110,11 @@ span {
   }
 
   &__guarantee {
+    top: 10px;
     font-weight: 700;
     color: #fff;
     position: absolute;
     left: 82px;
-    top: -12px;
     width: 208px;
     height: 36px;
     background: rgba(213, 0, 28, 1);
@@ -333,7 +334,7 @@ span {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 20%;
+  top: 30%;
   padding: 25px 0 0 40px;
   transition: opacity 1s;
   z-index: 3;
@@ -560,12 +561,10 @@ span {
   &__item {
     min-width: 533px;
     width: 533px;
-    min-height: 357px;
-    height: 357px;
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding: 25px 32px;
+    padding: 25px 32px 0;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
     min-width: 0;
   }
@@ -670,7 +669,664 @@ span {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1520px) {
+  .categories {
+    width: 220px;
+
+    &__menu-item {
+      width: 100%;
+    }
+    &__menu-logo_container {
+      margin: 0;
+      
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .main {
+    width: 900px;
+  }
+
+  .car {
+    padding: 20px;
+    width: 100%;
+    height: 490px;
+
+    &__guarantee {
+      top: 0;
+      font-size: 14px;
+      width: 20%;
+    }
+    &__photos-big {
+      width: 550px;
+
+      img {
+        width: 100%;
+      }
+    }
+    &__photos-small {
+      width: 550px;
+  
+      img {
+        width: calc(100% / 7);
+      }
+    }
+    &__title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    &__sees {
+      margin-bottom: 10px;
+    }
+    &__features {
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+    &__price {
+      margin-top: 10px;
+      span {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    }
+    &__buttons {
+      button {
+        font-size: 14px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .credit {
+    width: 100%;
+
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .description {
+    &__title {
+      font-size: 22px;
+    }
+    p, li {
+      font-size: 14px;
+    }
+    &__bottom {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .slider {
+    height: 260px;
+    &__item {
+      padding: 10px 20px;
+      width: 10%;
+      position: relative;
+    }
+    &__photo {
+      width: 50%;
+    }
+    .slick-slide {
+      width: 300px;
+    }
+    &__price {
+      h4 {
+        font-size: 22px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+    &__buttons {
+      height: 40px;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 20px;
+      button {
+        width: 46%;
+        height: 100%;
+        font-size: 14px;
+      }
+    }
+    &__guarantee {
+      left: 126px;
+    }
+    &__features {
+      font-size: 12px;
+    }
+    &__pattern2 {
+      top: 0;
+      left: -26px;
+    }
+    &__left-arrow, &__right-arrow {
+      transform: translate(246px, 106px);
+    }
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .categories {
+    width: 180px;
+
+    &__menu-logo_container {
+      width: 50px;
+    }
+
+    &__menu-item_more, &__menu-item_all {
+      font-size: 16px;
+    }
+
+    &__menu-item_all .categories__menu-name, .categories__menu-item_more .categories__menu-name {
+      margin-left: 14px;
+  }
+  }
+
+  .main {
+    width: 680px;
+  }
+
+  .car {
+    padding: 20px;
+    width: 100%;
+    height: 410px;
+
+    &__guarantee {
+      font-size: 12px;
+      width: 120px;
+      height: 30px;
+    }
+
+    &__photos-big, &__photos-small {
+      width: 460px;
+    }
+
+    &__info {
+      width: 160px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__sees {
+      p {
+        font-size: 10px;
+      }
+    }
+
+    &__features {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__price {
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__buttons {
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .credit {
+    height: 180px;
+    label {
+      font-size: 12px;
+    }
+    select {
+      height: 35px;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+    &__button {
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .slider {
+    height: 200px;
+    &__item {
+      padding: 10px 10px 0;
+      position: relative;
+    }
+    &__photo {
+      width: 45%;
+    }
+    &__price {
+      h4 {
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+    &__buttons {
+      height: 40px;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 20px;
+      button {
+        width: 46%;
+        height: 100%;
+        font-size: 14px;
+      }
+    }
+    &__guarantee {
+      left: 126px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__features {
+      font-size: 10px;
+    }
+    &__pattern1 {
+      top: 28px;
+    }
+    &__pattern2 {
+      top: -30px;
+      left: -60px;
+    }
+    &__left-arrow, &__right-arrow {
+      transform: translate(246px, 106px);
+    }
+    &__pattern1, &__pattern2 {
+      width: 60px;
+    }
+    &__guarantee {
+      left: 66px;
+      z-index: 3;
+    }
+    &__left-arrow, &__right-arrow {
+      transform: translate(160px, 70px);
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .all-title {
+    display: flex;
+    align-self: flex-start;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .categories {
+    width: 100%;
+    margin-bottom: 20px;
+    &__menu-item {
+      display: none;
+    }
+    padding: 15px;
+
+    .credit__select {
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  .main {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .description {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .car {
+    padding: 15px;
+    flex-direction: column;
+    border: 1px solid #D0D0D0;
+    height: 100%;
+    width: 100%;
+
+    &__photos {
+      position: relative;
+      width: 100%;
+
+      &-big {
+        width: 100%;
+      }
+      &-small {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    &__guarantee {
+      position: relative;
+      top: 10px;
+      left: 15px;
+      font-size: 14px;
+      max-width: 157px;
+      max-height: 27px;
+    }
+
+    &__title {
+      font-size: 34px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    &__sees {
+      display: none;
+    }
+
+    &__about {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    &__info {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      position: relative;
+      top: 10px;
+      left: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 80px;
+      font-size: 12px;
+      justify-content: space-around;
+
+      span {
+        padding-right: 40px;
+      }
+    }
+
+    &__price {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin-top: 20px;
+
+      h3 {
+        font-size: 32px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    &__buttons {
+      width: 100%;
+      margin-top: 20px;
+
+      button {
+        height: 50px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .credit {
+    position: relative;
+    width: 100%;
+    height: 420px;
+
+    &__inner {
+      height: 100%;
+      padding-top: 25px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+    
+    select {
+      height: 50px;
+    }
+
+    &__button {
+      height: 60px;
+      font-size: 16px;
+    }
+    &__upper {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 70%;
+      margin-bottom: 20px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    &__price {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      h6 {
+        font-size: 16px;
+      }
+      span {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .description {
+    margin-top: -20px;
+    padding-left: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__upper {
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1.2em;
+    }
+
+    &__bottom {
+      justify-content: flex-start;
+      margin-top: 30px;
+      height: 180px;
+      
+      p {
+        line-height: 1.2em;;
+      }
+      margin-bottom: 40px;
+    }
+  }
+
+  .slider {
+    position: relative;
+    margin-top: 60px;
+
+    &__guarantee {
+      font-size: 12px;
+      left: 0;
+    }
+
+    &__pattern1 {
+      width: 100px;
+    }
+
+    .slick-dots {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      & li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 10px;
+
+        &.slick-active button{
+          display: inline-block;
+          background: #D5001C;
+          width: 12px;
+          height: 12px;
+          outline: 2px solid #D9D9D9;
+        }
+      }
+
+      & button {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        background: #D9D9D9;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+  }
+
+  .overlay {
+    height: 3200px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .popup-buy, .popup-credit {
+    width: 90%;
+    height: 450px;
+    padding-top: 10px;
+
+    &__title {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    &__inner {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    &__left, &__right {
+      width: 100%;
+    }
+
+    &__left {
+      margin-top: 10px;
+
+      input {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__right {
+      top: -20px;
+      flex-direction: row-reverse;
+      justify-content: center;
+
+      ul {
+        top: 20px;
+        width: 60%;
+        left: 44px;
+        
+        li {
+          font-size: 12px;
+          line-height: 1.3em;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__circle {
+      right: -140px;
+      top: -60px;
+    }
+
+    &__keys {
+      top: 10px;
+      position: absolute;
+      margin: 0;
+      width: 100%;
+      right: -170px;
+    }
+  }
+
+  .popup-credit {
+    &__money {
+      position: absolute;
+      width: 80%;
+      right: 60px;
+    }
+
+    &__circle {
+      right: 30px;
+      top: -50px;
+    }
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__title {
+      width: 80%;
+    }
+
+    &__right {
+      justify-content: flex-end;
+      ul {
+        top: 30px;
+        left: -100px;
+      }
+    }
+
+    &__left {
+      margin-top: 30px;
+    }
+  }
+
+  .overlay {
+    height: 3200px;
+  }
+}
+
+@media screen and (max-width: 455px) {
   .wrapper {
     width: 100%;
     flex-direction: column;
@@ -719,6 +1375,10 @@ span {
     height: 100%;
     width: 100%;
 
+    .photo6, .photo7 {
+      display: none;
+    }
+    
     &__photos {
       position: relative;
       width: 100%;
@@ -731,14 +1391,10 @@ span {
     &__photos-small {
       margin-top: 10px;
       width: 100%;
-    }
 
-    .photo6, .photo7 {
-      display: none;
-    }
-
-    &__photos-small-photo {
-      width: 20%;
+      &-photo {
+        width: 20%;
+      }
     }
 
     &__guarantee {
@@ -998,102 +1654,5 @@ span {
         border: none;
       }
     }
-  }
-
-  .popup-buy, .popup-credit {
-    width: 90%;
-    height: 450px;
-    padding-top: 10px;
-
-    &__title {
-      font-size: 24px;
-      margin-top: 10px;
-    }
-
-    &__inner {
-      flex-direction: column-reverse;
-      width: 100%;
-    }
-
-    &__left, &__right {
-      width: 100%;
-    }
-
-    &__left {
-      margin-top: 10px;
-
-      input {
-        margin-bottom: 8px;
-      }
-    }
-
-    &__right {
-      top: -20px;
-      flex-direction: row-reverse;
-      // align-items: center;
-      justify-content: center;
-
-      ul {
-        top: 20px;
-        width: 60%;
-        left: 44px;
-        
-        li {
-          font-size: 12px;
-          line-height: 1.3em;
-          margin-bottom: 10px;
-        }
-      }
-    }
-
-    &__circle {
-      right: -140px;
-      top: -60px;
-    }
-
-    &__keys {
-      top: 10px;
-      position: absolute;
-      margin: 0;
-      width: 100%;
-      right: -170px;
-    }
-  }
-
-  .popup-credit {
-    &__money {
-      position: absolute;
-      width: 80%;
-      right: 60px;
-    }
-
-    &__circle {
-      right: 30px;
-      top: -50px;
-    }
-
-    &__inner {
-      padding: 0;
-    }
-
-    &__title {
-      width: 80%;
-    }
-
-    &__right {
-      justify-content: flex-end;
-      ul {
-        top: 30px;
-        left: -100px;
-      }
-    }
-
-    &__left {
-      margin-top: 30px;
-    }
-  }
-
-  .overlay {
-    height: 3200px;
   }
 }
